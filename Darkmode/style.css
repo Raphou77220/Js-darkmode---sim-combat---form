@@ -1,0 +1,108 @@
+/*Le root ic est utilisé pour créer une base de variable, ici c'est pour créer une uniformité dans les couleurs du site*/
+:root{
+  --base-color: white;
+  --base-variant: white;
+  --text-color: black;
+  --text-accent: white;
+  --primary-color: #fcbe00;
+  --accent-color: #a26022;
+}
+/* on utilies le meme concepte pour le darkmode, on utilise les memes noms et on change simplement la couleur*/
+.darkmode{
+  --base-color: rgb(0, 0, 0);
+  --base-variant: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+  --text-accent: rgb(0, 0, 0);
+  --primary-color: #a26022;
+  --accent-color: #fcbe00;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--base-color);
+  z-index: 10;
+  padding: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img{
+  height: 9rem;
+  
+  
+}
+
+header .logo img:hover {
+  background-color: var(--accent-color);
+  border-radius: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin-left: 1.7rem;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav button{
+  height: 2.2rem;
+}
+
+nav button img{
+  height: 1.7rem;
+}
+
+nav button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+  
+ 
+
+  
+
+
+.Infos {
+  position: relative;
+  overflow: hidden;
+  height: 135vh;
+  background-image: url(Sauron.png)
+}
+
+.Infos .Texte{
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  color: var(--text-color);
+}
+
+.Infos .Texte h3{
+  font-size: 3rem;
+  text-decoration-line: underline ;
+  -webkit-text-stroke: 1px var(--text-accent);
+}
+
+.Infos .Texte p{
+  font-size: 1.8rem;
+  font-family: "Eagle Lake";
+  -webkit-text-stroke: 1px var(--text-accent);
+}
